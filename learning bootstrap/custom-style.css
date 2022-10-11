@@ -199,8 +199,10 @@
     }
     
     .custom-shape-divider-bottom-1664857977 .shape-fill {
-        fill: #FFFFFF;
+        fill: #fafafa;
     }
+
+
     
     /** For mobile devices **/
     @media (max-width: 767px) {
@@ -525,86 +527,7 @@ transition: 0.5s;
  }
 
 
- /* .solo .content-2{
-  width: 500px;
-  height: 300px;
-  text-align: center;
-  color: white;
-  background:  #fd876a;
-position: absolute;
-left: 600px;
-transform: translateX(-156%), translateY(-10px);
-padding: 20px;
-border-radius: 40px 20px 10px 20px;
-box-shadow:  5px 5px 10px #b8b8b8, -5px -5px 10px #000;
-visibility: hidden;
-opacity: 0;
-transition: 0.5s;
- }
- .solo .content-3{
-  width: 500px;
-  height: 300px;
-  text-align: center;
-  color: white;
-  background: #1b1c25;
-position: absolute;
-left: 600px;
-transform: translateX(-192%), translateY(-10px);
-padding: 20px;
-border-radius: 40px 20px 10px 20px;
-box-shadow:  5px 5px 10px #b8b8b8, -5px -5px 10px #000;
-visibility: hidden;
-opacity: 0;
-transition: 0.5s;
- }
- .solo .content-4{
-  width: 500px;
-  height: 300px;
-  text-align: center;
-  color: white;
-  background: rgb(30, 137, 179);
-position: absolute;
-left: 600px;
-transform: translateX(-120%), translateY(-192px);
-padding: 20px;
-border-radius: 40px 20px 10px 20px;
-box-shadow:  5px 5px 10px #b8b8b8, -5px -5px 10px #000;
-visibility: hidden;
-opacity: 0;
-transition: 0.5s;
- }
- .solo .content-5{
-  width: 500px;
-  height: 300px;
-  text-align: center;
-  color: white;
-  background:#5543ca;
-position: absolute;
-left: 0px;
-transform: translateX(-156%), translateY(-192px);
-padding: 20px;
-border-radius: 40px 20px 10px 20px;
-box-shadow:  5px 5px 10px #b8b8b8, -5px -5px 10px #000;
-visibility: hidden;
-opacity: 0;
-transition: 0.5s;
- }
- .solo .content-6{
-  width: 500px;
-  height: 300px;
-  text-align: center;
-  color: white;
-  background: #002b52;
-position: absolute;
-left: 600px;
-transform: translateX(-191%), translateY(-192px);
-padding: 20px;
-border-radius: 40px 20px 10px 20px;
-box-shadow:  5px 5px 10px #b8b8b8, -5px -5px 10px #000;
-visibility: hidden;
-opacity: 0;
-transition: 0.5s;
- } */
+
 
  .solo.active .content-1{
   visibility: visible;
@@ -633,18 +556,22 @@ transition: 0.5s;
 
 
  /* testimonial css start */
-.cnt{
-  margin-top: 60px;
-}
+.testimonials{
+  background-color: #fafafa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+
  .img-text{
   width: 100%;
   height: 300px;
   display: block;
   text-align: center;
   padding: 5% 2%;
-  background-color: #262626;
-  color: #fff;
+  background-color: #fff;
+  color: rgb(47, 46, 46);
   border-radius:40% 14% 100% 15% / 22% 10% 28% 24%  ;
+  box-shadow: #6b3391  8px 8px, 8px 8px  ;
  }
 
  .img-text1{
@@ -653,9 +580,10 @@ transition: 0.5s;
   display: block;
   text-align: center;
   padding: 5% 2%;
-  background-color: #262626;
-  color: #fff;
+  background-color: #fff;
+  color: rgb(47, 46, 46);
   border-radius: 10% 91% 17% 77% / 10% 39% 14% 38% ; 
+  box-shadow: #6b3391  8px 8px, 8px 8px  ;
  }
 
  .img-text2{
@@ -664,9 +592,10 @@ transition: 0.5s;
   display: block;
   text-align: center;
   padding: 5% 2%;
-  background-color: #262626;
-  color: #fff;
+  background-color: #fff;
+  color: rgb(47, 46, 46);
   border-radius: 73% 24% 70% 4% / 41% 5% 36% 25%  ; 
+  box-shadow: #6b3391  8px 8px, 8px 8px  ;
  }
  .img-text1 h2{
   font-size: 25px;
@@ -689,7 +618,8 @@ transition: 0.5s;
  }
 .single-box{
   position: relative;
-  margin-bottom: 30px;
+  margin: 30px;
+
 }
 .img-area{
   position: absolute;
