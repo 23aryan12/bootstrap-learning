@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    </script>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -7,7 +36,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <title>Hello, world!</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -16,125 +45,50 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="custom-style.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
 
-   
-    <title>Hello, world!</title>
   </head>
 
   <body>
-    <!-- header start -->
-    <header>
-    <div class="container sticky-top">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-dark fixed-top mb-5" 
-      >
-        <a class="navbar-brand" href="#">
-          <img
-            src="../learning bootstrap/images/logo.png"
-            alt="there is a img"
-            srcset=""
-            id="logo"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- header starts -->
+    <div w3-include-html="header.html"></div>
+    <!-- header end -->
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto pr-5">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >About us <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Service
-              </a>
-              <div class="dropdown-menu bg-success">
-                <a class="dropdown-item text-danger" href="#"
-                  >Mobile app development</a
-                >
-                <a class="dropdown-item text-light" href="#"
-                  >Website designing & development</a
-                >
-                <a class="dropdown-item text-light" href="#"
-                  >Digital Marketing</a
-                >
-                <a class="dropdown-item text-light" href="#"
-                  >Graphic Designing</a
-                >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Nothing here</a>
-              </div>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Our Product
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">DentalGuru</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Portfolio <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Blog <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Carrer <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >FAQ <span class="sr-only">(current)</span></a
-              >
-            </li>
-          </ul>
-          <button type="button" class="btn btn-outline-success">
-            Contact Us
-          </button>
-        </div>
-      </nav>   
-    </div>
-    </header>
-    <!-- header ends -->
      <!-- Slider -->
-     <main>
+     <!-- <main> -->
     
-    <div class="container-fluid mb-3" id="bigscreen">
+      <div class="big-s1" id="particles-js">
+        <div class="big-s2" >
+        <div class="small-s1"><div><h1 class="ts">Welcome to DOAGURU INFO SYSTEMS</h1></div>
+          <h3 class="text-primary mt">
+            The Digital Marketing & Website Development Company
+          </h3>
+            <div><p class="tp">WE HELP STARTUPS AND BUSINESS IMPROVE THEIR DIGITAL PRESENCE WE
+              ARE ONE OF THE TOP & BEST DIGITAL MARKETING COMPANY IN JABALPUR, (
+              MADHYA PRADESH ) WITH 10+ YEARS OF EXPERIENCED TEAM..</p></div>
+    
+             <div class="ty"> 
+              <button type="button" class="btn btn-info">Get A Quote</button>
+              <button type="button" class="btn btn-link "> Learn More </button>
+
+                  </div>
+    
+        </div>
+        <div class="sml-2">
+            <div class="y"> 
+                <img class="img-s1"  src="img1.gif" alt="" > 
+            </img-src>
+        </div>
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!-- <div class="container-fluid mb-3" id="bigscreen">
       <div class="container kt" id="particles-js">
         <div class="row " id="main-slide" >
           <div class="col-sm">
@@ -152,8 +106,7 @@
               MADHYA PRADESH ) WITH 10+ YEARS OF EXPERIENCED TEAM.
             </p>
             <br><br>
-            <button type="button" class="btn btn-info">Get A Quote</button>
-            <button type="button" class="btn btn-link "> Learn More </button>
+   
 
           </div>
           <div class="col-sm">
@@ -161,96 +114,101 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 <!-- slider ends -->
-    <!-- our product setion starts -->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-sm">
-                <div class="container-fluid">
-        <h1 class="font-weight-bold"><b class="text-danger">Our</b> Product</h1>
-        </div>
-    </div>    
-    </div>
-    </div>
+    
+<!-- our product setion starts -->
+<div>
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-sm">
+              <div class="container-fluid">
+      <h1 class="font-weight-bold"><b class="text-danger">Our</b> Product</h1>
+      </div>
+  </div>    
+  </div>
+  
+  </div>
 
 <div class="body1">
 
-    <div class="header1">
-      <div class="conta">
-       <div class="solo active">
-        <div class="cardr vpf-1">
-          <div class="content-1">
-          <h2 class="rt">DentalGuru</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ipsum possimus dolores expedita provident dignissimos qui quasi?
-             Rerum nesciunt cum veniam, voluptatem,
-             quae rem repellat dolorum culpa id deleniti libero quidem.</p>
-        </div>
-        </div>
+  <div class="header1">
+    <div class="conta">
+     <div class="solo active">
+      <div class="cardr vpf-1">
+        <div class="content-1">
+        <h2 class="rt">DentalGuru</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ipsum possimus dolores expedita provident dignissimos qui quasi?
+           Rerum nesciunt cum veniam, voluptatem,
+           quae rem repellat dolorum culpa id deleniti libero quidem.</p>
       </div>
+      </div>
+    </div>
 
-      <div class="solo">
-        <div class="cardr  vpf-2">
-          <div class="content-2">
-          <h2 class="rt">DentalGuru</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ipsum possimus dolores expedita provident dignissimos qui quasi?
-             Rerum nesciunt cum veniam, voluptatem,
-             quae rem repellat dolorum culpa id deleniti libero quidem.</p>
-        </div>
-        </div>
+    <div class="solo">
+      <div class="cardr  vpf-2">
+        <div class="content-2">
+        <h2 class="rt">DentalGuru</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ipsum possimus dolores expedita provident dignissimos qui quasi?
+           Rerum nesciunt cum veniam, voluptatem,
+           quae rem repellat dolorum culpa id deleniti libero quidem.</p>
       </div>
-      <div class="solo">
-        <div class="cardr  vpf-3">
-          <div class="content-3">
-          <h2 class="rt">DentalGuru</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ipsum possimus dolores expedita provident dignissimos qui quasi?
-             Rerum nesciunt cum veniam, voluptatem,
-             quae rem repellat dolorum culpa id deleniti libero quidem.</p>
-        </div>
-        </div>
-      </div>
-      <div class="solo">
-        <div class="cardr  vpf-4">
-          <div class="content-4">
-          <h2 class="rt">DentalGuru</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ipsum possimus dolores expedita provident dignissimos qui quasi?
-             Rerum nesciunt cum veniam, voluptatem,
-             quae rem repellat dolorum culpa id deleniti libero quidem.</p>
-        </div>
-        </div>
-      </div>
-      <div class="solo">
-        <div class="cardr  vpf-5">
-          <div class="content-5">
-          <h2 class="rt">DentalGuru</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ipsum possimus dolores expedita provident dignissimos qui quasi?
-             Rerum nesciunt cum veniam, voluptatem,
-             quae rem repellat dolorum culpa id deleniti libero quidem.</p>
-        </div>
-        </div>
-      </div>
-      <div class="solo">
-        <div class="cardr  vpf-6">
-          <div class="content-6">
-          <h2 class="rt">DentalGuru</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ipsum possimus dolores expedita provident dignissimos qui quasi?
-             Rerum nesciunt cum veniam, voluptatem,
-             quae rem repellat dolorum culpa id deleniti libero quidem.</p>
-        </div>
-        </div>
       </div>
     </div>
+    <div class="solo">
+      <div class="cardr  vpf-3">
+        <div class="content-3">
+        <h2 class="rt">DentalGuru</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ipsum possimus dolores expedita provident dignissimos qui quasi?
+           Rerum nesciunt cum veniam, voluptatem,
+           quae rem repellat dolorum culpa id deleniti libero quidem.</p>
+      </div>
+      </div>
     </div>
+    <div class="solo">
+      <div class="cardr  vpf-4">
+        <div class="content-4">
+        <h2 class="rt">DentalGuru</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ipsum possimus dolores expedita provident dignissimos qui quasi?
+           Rerum nesciunt cum veniam, voluptatem,
+           quae rem repellat dolorum culpa id deleniti libero quidem.</p>
+      </div>
+      </div>
+    </div>
+    <div class="solo">
+      <div class="cardr  vpf-5">
+        <div class="content-5">
+        <h2 class="rt">DentalGuru</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ipsum possimus dolores expedita provident dignissimos qui quasi?
+           Rerum nesciunt cum veniam, voluptatem,
+           quae rem repellat dolorum culpa id deleniti libero quidem.</p>
+      </div>
+      </div>
+    </div>
+    <div class="solo">
+      <div class="cardr  vpf-6">
+        <div class="content-6">
+        <h2 class="rt">DentalGuru</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ipsum possimus dolores expedita provident dignissimos qui quasi?
+           Rerum nesciunt cum veniam, voluptatem,
+           quae rem repellat dolorum culpa id deleniti libero quidem.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
 </div>
-    
- <!-- our product section ends -->
+  </div>  
+<!-- our product section ends -->
+
+
   <!-- who we are section -->
   <div class="container mb-5 mt-5">
     <div class="row">
@@ -721,53 +679,20 @@ Customized Software Design & Development</li>
 </main>
 
 
+
+
+
+
+
+
+
+
+
+
+
 <!-- footer start -->
-<footer>
-
-<div class="cont-main">
-  
-<div class="frist-sec">
-  <div class="altz"><h6>ADDRESS LIST</h6></div>
-  <div class="b1"><img class="icn-res" src="../learning bootstrap/images/location.png" alt="" ><p>644, Nove Adaresh Colony Yadav Colony, Jabalpur Madhya Pradesh 482002</p></div>
-  <div class="b2"><img class="icn-res" src="../learning bootstrap/images/telephone.png" alt="" ><p class="t1">+91 7440992424</p></div>
-  <div class="b3"><img class="icn-res" src="../learning bootstrap/images/email.png" alt="" ><p class="t1">info@doaguru.com</p></div>
-</div>
-<div class="Second-sec">
-  <div class="altz"><h6>OUR SERVICES</h6></div>
-  <div class="b1"><img class="icn-res" src="../learning bootstrap/images/web-design.png" alt="" ><p>Website Design</p></div>
-  <div class="b1"><img class="icn-res" src="../learning bootstrap/images/mobile-application.png" alt="" ><p class="t1">Mobile Application</p></div>
-  <div class="b1"><img class="icn-res" src="../learning bootstrap/images/bullhorn.png" alt="" ><p class="t1">Digital Marketing</p></div>
-  <div class="b1"><img class="icn-res" src="../learning bootstrap/images/coding.png" alt="" ><p class="t1">Software Development</p></div>
-  <div class="b1"><img class="icn-res" src="../learning bootstrap/images/graphic.png" alt="" ><p class="t1">Graphic Design</p></div>
-  <div class="b1"><img class="icn-res" src="../learning bootstrap/images/big-data.png" alt="" ><p class="t1">Big Data</p></div>
-</div>
-
-<div class="set1">
-<div class="third-sec">
-  <div class="altz"><h6>LINKS LIST</h6></div>
-  <div class="b1"><p>About us</p></div>
-  <div class="b1"><p class="t1">Contact Us</p></div>
-  <div class="b1"><p class="t1">Careers</p></div>
-  <div class="b1"><p class="t1">Blog</p></div>
-  <div class="b1"><p class="t1">Portfolio</p></div>
-</div>
-<div class="fourth-sec">
- <div class="fimg1"> <img class="icn-img" src="../learning bootstrap/images/logo.png" alt="" ></div>
-<div class="b4"><h1>Follow us on</h1></div>
-<div class="social-icn">
-  <div class="fimg2"> <a href="https://www.facebook.com/"><img class="icn-img2" src="../learning bootstrap/images/facebook.png" alt="" ></a></div>
-  <div class="fimg2"> <a href=""><img class="icn-img2" src="../learning bootstrap/images/twitter.png" alt="" ></a></div>
-  <div class="fimg2"><a href=""> <img class="icn-img2" src="../learning bootstrap/images/linkedin.png" alt="" ></a></div>
-  <div class="fimg2"><a href="https://www.instagram.com/"> <img class="icn-img2" src="../learning bootstrap/images/instagram.png" alt="" ></a></div>
-
-</div>
-</div>
-</div>
-</div>
-
-</div>
-
-</footer>
+<div w3-include-html="footer.html"></div>
+<!-- footer end -->
    
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -789,14 +714,22 @@ Customized Software Design & Development</li>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
    -->
+
+   
+
     <script src="particles.js"></script>
  
     <script src="app.js"></script>
+    
     <script>
-        $(window).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
-        });
-       </script>
+      includeHTML();
+      </script>
+
+<script>
+  $(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+  });
+ </script>
 
        <!-- tooltip script  -->
        <script>
