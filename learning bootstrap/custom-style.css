@@ -21,8 +21,7 @@
        #particles-js{
         /* position:relative; */
         width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(rgb(255, 255, 255), rgb(175, 235, 250), rgba(68, 0, 255, 0.466));  
+        height: auto;
         
       }
        .big-s1{
@@ -33,6 +32,8 @@
         width: 100%;
         height: auto;
         justify-content: center;
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(175, 235, 250), rgba(68, 0, 255, 0.466));  
+
       }
       .big-s2{
         display: flex;
@@ -45,7 +46,7 @@
       .small-s1{
         border: 2px solid black;
         width: 100%;
-        min-width: 400px;
+        /* min-width: 400px; */
         height: auto;
         
       }
@@ -63,7 +64,7 @@
       .sml-2{
         border: 2px solid black;
         width: 100%;
-        min-width: 400px;
+        /* min-width: 400px; */
         height: auto;
         text-align: right;
       }
@@ -94,6 +95,15 @@
         height: 60px;
         padding-top: 20vh;
       }
+
+
+
+      /* service we provide css start */
+    
+     .hyt{
+      border: 2px solid black;
+     }
+
       .carser{
         background-color: #002b52;
         position: relative;
@@ -131,6 +141,8 @@
         opacity: 1;
         transform: translateY(-80px);
       }
+
+/* service we provide section end */
 
       .get_in_touch{
         max-width: 600px;
@@ -348,16 +360,28 @@
  } 
 
  /* product css */
+
+ .rip{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ 
+
 .body1{
-  /* border: 2px solid black; */
+  border: 2px solid rgb(241, 53, 53);
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+width: 100%;
 height: 500px;
+
 }
 
  .header1{
-  /* border: 2px solid black; */
+  border: 2px solid black;
 display: flex;
 /* position:relative; */
 align-items: center;
@@ -366,14 +390,21 @@ top: 120%;
 float: left;
  }
  .conta{
-  /* border: 2px solid black; */
-  flex-basis: 60%;
-  position: relative;
+  border: 2px solid rgb(47, 26, 236);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  /* flex-basis: 60%; */
+  /* position: relative; */
   top: 50%;
   left: 0%;
   
  }
  .solo{
+  border: 2px solid black;
+
   position: relative;
   display: inline-block;
   width: 120px;
@@ -384,6 +415,8 @@ float: left;
  }
 
  .cardr{
+  border: 2px solid black;
+
   width: 150px;
   height: 170px;
   display: inline-block;
@@ -923,7 +956,7 @@ transition: 0.5;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 400px;
+  height: auto;
 align-items: center;
 justify-content: center;
 }
@@ -931,8 +964,9 @@ justify-content: center;
  
   border: 0.5px solid rgba(137, 137, 137, 0.272);
   display: flex;
-  width: 1000px;
-  height: 300px;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
   background-image: url('./images/techbg.jpg');
  background-size: contain;
  background-repeat: no-repeat;
@@ -940,16 +974,16 @@ justify-content: center;
  box-shadow: 3px 3px 5px 5px #57606a48;
 }
 .fbox{
-/* border: 2px solid black; */
- width: 500px; 
+border: 2px solid black;
+ width: 40%; 
  height: 300px;
  text-align: left;
  padding-top: 20px;
 padding-left: 35px;
 }
 .secbox{
-  /* border: 2px solid black; */
- width: 500px; 
+  border: 2px solid black;
+ width: 60%; 
  height: 300px;
 }
 .al{
