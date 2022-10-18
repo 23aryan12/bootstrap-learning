@@ -251,10 +251,14 @@
         width: 70px;
       }
 
+      /* client section start css*/
+
+
       .white{
         /* background: linear-gradient(-30deg,  #fffafd 60%, #ff97d9 20% ); */
         background-color: #002b52;
-        height: 151vh;
+        width: 100%;
+        height: auto
       }
       .bgg{
         margin-top: 40px;
@@ -358,6 +362,7 @@
   height: 100px;
   width: 100px;
  } 
+/* client section css end */
 
  /* product css */
 
@@ -658,6 +663,9 @@ transition: 0.5s;
  /* testimonial css start */
 
  .sec-title {
+  
+  width: 100%;
+  height: auto;
   /* border: 2px solid black; */
 	margin-bottom: 50px;
 	padding-bottom: 15px;
@@ -962,7 +970,7 @@ justify-content: center;
 }
 .sbox{
  
-  border: 0.5px solid rgba(137, 137, 137, 0.272);
+  border: 0.5px solid rgba(243, 12, 12, 0.272);
   display: flex;
   flex-wrap: wrap;
   width: 80%;

@@ -138,4 +138,51 @@
                             display: flex;
                             flex-wrap:wrap ;
                            }
+
+
+
+
+
+
+
+                           /* technology we use res css */
+
+                           .fbox{
+                             width: 50%; 
+                             height: auto;
+                             padding-bottom: 30px;
+                            
+                            }
+                            .secbox{
+                             width: 50%; 
+                             height: auto;
+                            }
+
+
+                            /* testimomial css res */
+
+                            .sec-title {
+                                /* display: flex;
+                                flex-wrap: wrap; */
+                                width: 100%;
+                                height: auto;
+                                /* border: 2px solid black; */
+                                  margin-bottom: 50px;
+                                  padding-bottom: 15px;
+                                  position: relative;
+                                text-align: center;
+                              }
+                              .sec-title::after {
+                                /* border: 2px solid black; */
+
+                                  content: "";
+                                  position: absolute;
+                                  left: 80px;
+                                  /* bottom: 0; */
+                                  width: 100px;
+                                  height: 3px;
+                                  background: #000;
+                              }
+
+
 }
