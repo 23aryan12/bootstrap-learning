@@ -1,3 +1,68 @@
+/* desktop resp media qurey start  */
+@media (max-width: 1230px){
+    .solo .content-1{
+        width: 400px;
+        height: 300px;
+       
+       
+      left: 500px;
+     
+     
+       }
+    .solo .content-2{
+        width: 400px;
+        height: 300px;
+       
+       
+      left: 360px;
+     
+     
+       }
+    .solo .content-3{
+        width: 400px;
+        height: 300px;
+       
+       
+      left: 200px;
+     
+     
+       }
+    .solo .content-4{
+        width: 400px;
+        height: 300px;
+       
+transform: translateX(150%), translateY(100px);
+        
+      left: 500px;
+     
+     
+       }
+    .solo .content-5{
+        width: 400px;
+        height: 300px;
+       
+      left: 360px;
+     
+     
+       }
+    .solo .content-6{
+        width: 400px;
+        height: 300px;
+       
+       
+      left: 200px;
+     
+     
+       }
+}
+
+/* desktop resp media qurey ends */
+
+
+
+
+/* mobile responsive media qurey */
+
 @media (max-width: 768px){
     .big-s1{
         display: block;
@@ -184,5 +249,6 @@
                                   background: #000;
                               }
 
-
 }
+
+/* mobile responsive media query end */
