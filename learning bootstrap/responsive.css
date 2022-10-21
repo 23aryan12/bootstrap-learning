@@ -1,5 +1,5 @@
 /* desktop resp media qurey start  */
-@media (max-width: 1230px){
+@media (min-width: 1025px) and (max-width: 1280px){
     .solo .content-1{
         width: 400px;
         height: 300px;
@@ -58,12 +58,107 @@ transform: translateX(150%), translateY(100px);
 
 /* desktop resp media qurey ends */
 
+    /* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .body1{
+        /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height:1000px;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    align-items: flex-start;
+    justify-content: center;
+      }
+
+      .header1{
+        top: 0px;
+       }
+
+    .conta{
+        top: 0%;
+    }
+
+    /* .solo{
+        border: 2px solid black;
+     
+        margin: 6px;
+        margin-right: 30px;
+        margin-left: 0;
+        /* padding-right: 20px; */
+      
+       /* } */ 
+    .solo .content-1{
+       /* position: relative; */
+      transform: translateY(150%);
+      /* padding: 20px; */
+     left: 0px;
+     width: 300px;
+  height: auto;
+ 
+     
+       }
+       .solo .content-2{
+        /* position: absolute; */
+       transform: translateY(150%);
+       /* padding: 20px; */
+      left: 0px;
+      width: 300px;
+   height: auto;
+  
+      
+        }    .solo .content-3{
+            /* position: absolute; */
+           transform: translateY(150%);
+           /* padding: 20px; */
+          /* left: 10px; */
+          width: 300px;
+       height: auto;
+      
+          
+            }    .solo .content-4{
+                /* position: absolute; */
+               transform: translateY(150%);
+               /* padding: 20px; */
+              left: 0px;
+              width: 300px;
+           height: auto;
+          
+              
+                }    .solo .content-5{
+                    /* position: absolute; */
+                   transform: translateY(150%);
+                   /* padding: 20px; */
+                  left: 0px;
+                  width: 300px;
+               height: auto;
+              
+                  
+                    }
+                    .solo .content-6{
+                        /* position: absolute; */
+                       transform: translateY(150%);
+                       /* padding: 20px; */
+                      left: 0px;
+                      width: 300px;
+                   height: auto;
+                  
+                      
+                        }
+
+   
+}
+
+
+
 
 
 
 /* mobile responsive media qurey */
 
-@media (max-width: 768px){
+@media (min-width: 481px) and (max-width: 767px){
     .big-s1{
         display: block;
         flex-wrap: wrap;
@@ -99,10 +194,12 @@ transform: translateX(150%), translateY(100px);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    height: 1100px;
     margin: 0px;
     padding: 0px;
     top: 0px;
+    align-items: flex-start;
+    justify-content: center;
       }
 
       .header1{
@@ -111,6 +208,7 @@ transform: translateX(150%), translateY(100px);
 
     .conta{
         top: 0%;
+       align-items: flex-start;
     }
 
     /* .solo{

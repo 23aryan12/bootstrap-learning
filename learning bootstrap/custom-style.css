@@ -1,6 +1,13 @@
 /* *{
   border: 2px solid black;
 } */
+html,body{
+  margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   overflow-x: hidden;
+}
 *{
    margin: 0;
    padding: 0;
@@ -99,12 +106,44 @@
 
 
       /* service we provide css start */
+     .DividerBox{
+      /* background-color: grey; */
+      /* min-height: fit-content; */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      /* border: 2px solid black; */
+      margin-bottom: 30px;
+  }
+
+  .servicebox{
+    width: inherit;
+    height: inherit;
+ /* background-color: red; */
+    border: 2px solid beige;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    /* border:1px solid rgb(216, 64, 64); */
     
-     .hyt{
-      border: 2px solid black;
-     }
+}
+.contain{
+margin: 20px;
+
+}
+     
 
       .carser{
+        
         background-color: #002b52;
         position: relative;
         width: 300px;
@@ -288,7 +327,7 @@
 
     
     /** For mobile devices **/
-    @media (max-width: 767px) {
+    @media (min-width: 481px) and (max-width: 767px) {
         .custom-shape-divider-bottom-1664857977 svg {
             width: calc(120% + 1.3px);
             height: 150px;
@@ -661,11 +700,12 @@ transition: 0.5s;
 
  /* testimonial css start */
 
+
  .sec-title {
-  
+ 
   width: 100%;
   height: auto;
-  /* border: 2px solid black; */
+  /* border: 5px solid black; */
 	margin-bottom: 50px;
 	padding-bottom: 15px;
 	position: relative;
@@ -681,7 +721,7 @@ transition: 0.5s;
 	background: #000;
 }
 .sec-title h2 {
-	font-size: 60px;
+	font-size: 2rem;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 900;
 	letter-spacing: 0px;
@@ -1022,7 +1062,7 @@ padding-left: 35px;
 
 /* about us css start */
 .big-1{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-wrap: wrap;
   /* flex-direction: row; */
@@ -1033,21 +1073,24 @@ padding-left: 35px;
 }
 .big-2{
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
   height: auto;
   width: 90%;
   padding-top: 100px;
-  /* justify-content: space-between; */
+  justify-content: center;
+  /* background-color: yellow; */
+  align-items: center;
 }
 .small-1{
-  border: 2px solid black;
-  width: 60%;
+  /* border: 2px solid black; */
+  width: 500px;
   height: auto;
   
 }
 .small-2{
-  border: 2px solid black;
-  width: 100%;
+  /* border: 2px solid black; */
+  width: 500px;
   height: auto;
   text-align: right;
 }
@@ -1085,5 +1128,39 @@ padding-left: 35px;
     
 .myDIV:hover + .hide {
   display: block;
-  
 }
+
+.abt-2{
+  width: 100%;
+  height: auto;
+}
+/* vision section css start  */
+.boxer-vis{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  background-color: #61707d;
+}
+.boxer-out{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  background-color: yellow;
+  justify-content: space-around;
+  align-items: center;
+}
+.boxer-1{
+  width: 500px;
+  height: auto;
+  background-color: green;
+}
+.boxer-2{
+  width: 500px;
+  height: 350px;
+  background-color: green;
+}
+/* vision section css end  */
