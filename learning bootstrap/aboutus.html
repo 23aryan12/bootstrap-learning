@@ -83,19 +83,70 @@
 </div>
 
 <!-- vision section start  -->
-<div class="boxer-vis">
-    <div class="boxer-out">
+<div class="box-vis">
+    <div class="box-out">
     <div class="boxer-1">
         <div class="imgabt">
         <img class="abt-2" src="../learning bootstrap/images/vision-img.gif" alt="" > 
         </div>
     </div>
-    <div class="boxer-2"></div>
+    <div class="boxer-2"> 
+        <div><p class="ti">OUR VISION</p></div>
+        <div><h1 class="ti-1">DOAGuru InfoSystems</h1></div>
+        <div><p class="ti-2">Offers an in-depth experience in BigData Analysis, Android & IOS App 
+            development, Web Development, Data Analysis for various sectors like Healthcare, 
+            Manufacturing, Retail, Education, Gas, Power, banking & finance etc.</p></div>
+    </div>
 </div>
 </div>
 
 <!-- vision section start  -->
 
+
+<!-- our goal section start  -->
+<div class="boxer-vis">
+    <div class="boxer-out">
+    <div class="boxx-1">
+        <div><h1 class="tio-1">Our Goal</h1></div>
+        <div><p class="tio-2">Our goal is to deliver great business value for our clients using 
+            technology and consulting to transform and optimize their business processes. Being early adapters of new technologies, 
+            building expertise and providing unique and fresh solution is our goal.</p></div>
+       
+    </div>
+    <div class="boxx-2"> 
+        <div class="imgabt">
+            <img class="abt-2" src="../learning bootstrap/images/goalimg.gif" alt="" > 
+            </div>
+    </div>
+</div>
+</div>
+
+<!-- our goal section start  -->
+<div class="box-goal">
+ <div class="box-goal1">
+ <div class="hbox">
+    <div class="tit-box">
+        <div class="t-box1"><h1>Why choose us actually?</h1>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="butn-box"> <div><button type="button" class="btn btn-danger"> Get in touch</button></div></div>
+ </div>
+</div>
+ 
+
+ <div class="g-box">
+    <div class="fir-box"></div>
+    <div class="secn-box"></div>
+    <div class="thirr-box"></div>
+    <div class="four-box"></div>
+
+ </div>
+ 
+
+
+ </div>
+
+</div>
 
 
 </main>
@@ -116,11 +167,12 @@
    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
@@ -134,19 +186,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
    -->
 
-   <script src="particles.js"></script>
+   <!-- <script src="particles.js"></script> -->
  
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 
     <script>
+       
+
+        $(window).scroll(function(){
+          alert('aryan')
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+        });
+   
         includeHTML();
         </script>
 
-<script>
-    $(window).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
-    });
-   </script>
+
 
 </body>
 </html>
